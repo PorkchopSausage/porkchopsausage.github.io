@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Alien Abduction Order Form</title>
+	<link href="css/forms.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<section>
+			<h1>Alien Abduction Order Form</h1>
+			<p>Fill out the form below to place an order for an alien abduction by one of our fine UFOs.</p>
+
+		<form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="POST">
+
+			<!-- Hidden field for processing -->
+			<input type="hidden" name="send_to" value="e.c.thompson@keele.ac.uk">
+
+			<fieldset>
+			<legend>Your contact information</legend>
+			<label for="name">Your name:</label>
+				<input type="text" id="name" name="name" placeholder="e.g. John Dark Souls" required>
+			
+			<label for="phone">Phone number:</label>
+				<input type="tel" id="phone" name="phone" placeholder="01234567890" required>
+	
+			<label for="email">Email:</label>
+				<input type="email" id="email" name="email" placeholder="john.ds@gmail.com" required>
+			</fieldset>
+
+			<fieldset>
+			<legend>About your abduction </legend>
+			<label for="date">Requested date:</label>
+				<input type="date" id="date" name="date">
+				
+			<label for="abductees">How many people would you like abducted?</label>
+				<input type="number" id="abductees" name="abductees" min="1" max="5">
+				
+			<label for="ufo">What type of UFO do you prefer?</label>
+			<select id="ufo">
+				<option selected>Select one...</option>
+				<option value="oval">Classic oval UFO</option>
+				<option value="star-wars">Star Wars-style Imperial cruiser</option>
+				<option value="battlestar">Battlestar Galactica-style Viper</option>
+				<option value="cube">Borg-style cube</option>
+			</select>
+			</fieldset>
+
+		<fieldset>
+			<legend>What type of abduction experience do you want?</legend>
+			
+			<label>
+			<input type="radio" name="radio" value="choice1">Tour of the solar system </label>
+
+			<lable>
+			<input type="radio" name="radio" value="choice2">Alien dinner and discussion </lable>
+
+			<label>
+			<input type="radio" name="radio" value="choice3">Alien dance lessons</label>
+
+			<lable>
+			<input type="radio" name="radio" value="choice4">Whale watching</lable>
+		
+
+			<label for="requests">Special requests:</lable>
+			<textarea id="requests"></textarea>
+			
+			<input type="checkbox" value="subscribe" name="subscribe" checked>Add me to your email list!
+		</fieldset>
+		<br>
+
+		<button type="submit">Click me to submit your order!</button>
+
+		</form>		
+		</section>
+
+		<aside>
+			<h3>Our Location</h3>
+			<address>
+				Frontend Masters &middot;
+				60 South 6th Street &middot;
+				Suite 3625 &middot;
+				Minneapolis, MN 55402
+			</address>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.2953446998927!2d-93.2728207233905!3d44.97831106572617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b3329a6e23a267%3A0x42412ff47609ca09!2s60%20South%206th%20St%2C%20Minneapolis%2C%20MN%2055402%2C%20USA!5e0!3m2!1sen!2suk!4v1723459713884!5m2!1sen!2suk" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</aside>
+	</div>
+	<script src="js/forms.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
